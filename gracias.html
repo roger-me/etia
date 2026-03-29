@@ -33,7 +33,7 @@
           Llamar ahora
         </a>
       </nav>
-      <button class="hamburger" aria-label="Abrir menú" onclick="document.querySelector('.mobile-nav').classList.add('active')">
+      <button class="hamburger" aria-label="Abrir menú" onclick="this.classList.toggle('active'); document.querySelector('.mobile-nav').classList.toggle('active')">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -41,7 +41,7 @@
 
   <!-- MOBILE NAV -->
   <div class="mobile-nav">
-    <button class="mobile-nav__close" aria-label="Cerrar menú" onclick="this.parentElement.classList.remove('active')">&times;</button>
+    <button class="mobile-nav__close" aria-label="Cerrar menú" onclick="this.parentElement.classList.remove('active'); document.querySelector('.hamburger').classList.remove('active')">&times;</button>
     <a href="index.html">Inicio</a>
     <a href="sobre-nosotros.html">Sobre Nosotros</a>
     <a href="tatuajes.html">Tattoos</a>
