@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ETIA TATTOO: Tatuajes y Piercings en Madrid y Coslada</title>
+  <meta name="description" content="Estudio de tatuajes y piercings en Coslada, Madrid. ETIA TATTOO ofrece diseños personalizados y perforaciones seguras con artistas expertos. Agenda tu cita hoy.">
+  <meta name="keywords" content="Tatuador Madrid, Piercing Coslada, Estudio de arte corporal, Tatuajes personalizados, Perforaciones seguras">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ETIA TATTOO: Tatuajes y Piercings en Madrid y Coslada">
+  <meta property="og:description" content="Estudio de tatuajes y piercings en Coslada, Madrid. Diseños personalizados y perforaciones seguras.">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="assets/images/logo.jpg" alt="Logo Etia Tattoo">
+      </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link nav__link--active">Inicio</a></li>
+          <li class="nav__item"><a href="sobre-nosotros.html" class="nav__link">Sobre Nosotros</a></li>
+          <li class="nav__item nav__item--dropdown">
+            <a href="#" class="nav__link">Servicios</a>
+            <div class="nav__dropdown">
+              <a href="tatuajes.html">Tattoos</a>
+              <a href="piercing.html">Piercing</a>
+            </div>
+          </li>
+          <li class="nav__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+        </ul>
+        <a href="tel:+34604917570" class="btn btn--primary">
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.72 11.72 0 003.66.59 1 1 0 011 1v3.59a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.59a1 1 0 011 1 11.72 11.72 0 00.59 3.66 1 1 0 01-.24 1.01l-2.32 2.12z"/></svg>
+          Llamar ahora
+        </a>
+      </nav>
+      <button class="hamburger" aria-label="Abrir menú" onclick="document.querySelector('.mobile-nav').classList.add('active')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav">
+    <button class="mobile-nav__close" aria-label="Cerrar menú" onclick="this.parentElement.classList.remove('active')">&times;</button>
+    <a href="index.html" onclick="this.parentElement.classList.remove('active')">Inicio</a>
+    <a href="sobre-nosotros.html" onclick="this.parentElement.classList.remove('active')">Sobre Nosotros</a>
+    <a href="tatuajes.html" onclick="this.parentElement.classList.remove('active')">Tattoos</a>
+    <a href="piercing.html" onclick="this.parentElement.classList.remove('active')">Piercing</a>
+    <a href="contacto.html" onclick="this.parentElement.classList.remove('active')">Contacto</a>
+    <a href="tel:+34604917570" class="btn btn--primary" style="margin-top:16px">Llamar ahora</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg">
+      <img src="assets/images/hero-bg.jpeg" alt="Estudio Etia Tattoo">
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1 class="hero__title">ETIA TATTOO en Madrid</h1>
+      <p class="hero__subtitle">Tatuajes y Piercings en Madrid</p>
+      <p class="hero__text">Con un equipo de artistas apasionados, garantizamos una experiencia excepcional, creativa y profesional.</p>
+      <div class="hero__actions">
+        <a href="contacto.html" class="btn btn--primary btn--large">Pide tu Cita</a>
+      </div>
+      <div class="hero__social">
+        <a href="https://instagram.com/etia.tattoo" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 01-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 017.8 2zm-.2 2A3.6 3.6 0 004 7.6v8.8A3.6 3.6 0 007.6 20h8.8a3.6 3.6 0 003.6-3.6V7.6A3.6 3.6 0 0016.4 4H7.6zm9.65 1.5a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6z"/></svg>
+        </a>
+        <a href="https://wa.me/34604917570" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- NUESTROS SERVICIOS -->
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Nuestros Servicios</h2>
+        <p class="section__subtitle">Estudio de tatuajes y piercings en Coslada, Madrid. ETIA TATTOO ofrece diseños personalizados y perforaciones seguras con artistas expertos.</p>
+      </div>
+
+      <div style="text-align:center; margin-bottom:48px;">
+        <h3 style="font-family:var(--font-display); font-size:clamp(24px,3vw,36px); text-transform:uppercase; margin-bottom:12px;">Tu arte comienza aquí</h3>
+        <p style="font-size:15px; font-weight:300; max-width:600px; margin:0 auto; line-height:1.7; opacity:0.8;">No esperes más. Contáctanos y haz realidad tu próximo tatuaje o piercing con los mejores profesionales en Madrid.</p>
+      </div>
+
+      <div class="services">
+        <a href="tatuajes.html" class="service-card">
+          <img src="assets/images/tattoo-20.jpg" alt="Tatuaje Etia Tattoo">
+          <div class="service-card__overlay">
+            <h3 class="service-card__title">Tattoo</h3>
+            <p class="service-card__text">Diseños 100% personalizados y únicos para cada cliente</p>
+          </div>
+        </a>
+        <a href="piercing.html" class="service-card">
+          <img src="assets/images/piercing-card.jpg" alt="Piercing Etia Tattoo">
+          <div class="service-card__overlay">
+            <h3 class="service-card__title">Piercing</h3>
+            <p class="service-card__text">Calidad de joyería y materiales premium</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATEMENT -->
+  <section class="statement">
+    <h2 class="statement__title">Tu confianza y tu estilo son nuestra prioridad.</h2>
+    <p class="statement__text">Si prefieres algo más clásico, trabajamos también con old school y new school, así como con dotwork, blackwork, sketch, japonés, neotradicional, fineline y watercolor.</p>
+  </section>
+
+  <!-- VALUE PROPOSITIONS -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="values">
+        <div class="value-card">
+          <div class="value-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M32 8c-8 0-16 8-16 20s16 28 16 28 16-16 16-28S40 8 32 8z"/>
+              <circle cx="32" cy="28" r="6"/>
+              <path d="M24 44l-4 8M40 44l4 8"/>
+            </svg>
+          </div>
+          <h4 class="value-card__title">Artistas expertos y versátiles</h4>
+          <p class="value-card__text">Tatuadores y piercer altamente cualificados y versátiles en diversos estilos. Desde el realismo al fine line, y perforaciones clásicas a modernas, aseguramos resultados impecables y adaptados a tu visión.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M32 4l6 12h14l-10 9 4 13-14-8-14 8 4-13L12 16h14z"/>
+              <circle cx="32" cy="48" r="8"/>
+              <path d="M28 48h8M32 44v8"/>
+            </svg>
+          </div>
+          <h4 class="value-card__title">Seguridad e higiene insuperables</h4>
+          <p class="value-card__text">Utilizamos materiales estériles de un solo uso y seguimos protocolos de higiene y esterilización que superan las normativas sanitarias, para tu total tranquilidad.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="12" y="8" width="40" height="48" rx="4"/>
+              <path d="M20 20h24M20 28h24M20 36h16"/>
+              <circle cx="44" cy="44" r="8"/>
+              <path d="M40 44l3 3 5-5"/>
+            </svg>
+          </div>
+          <h4 class="value-card__title">Diseños personalizados y asesoramiento experto</h4>
+          <p class="value-card__text">Tatuajes y piercings, creamos arte que cuenta tu historia. Te escuchamos y asesoramos para transformar tus ideas en diseños y perforaciones perfectas que reflejen tu identidad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section section--black">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Galería de Tatuajes y Piercings en Coslada</h2>
+      </div>
+    </div>
+    <div class="gallery-track">
+      <div class="gallery-item"><img src="assets/images/tattoo-38.jpg" alt="Tatuaje espalda Etia Tattoo"></div>
+      <div class="gallery-item"><img src="assets/images/piercing-40.jpg" alt="Piercing Etia Tattoo"></div>
+      <div class="gallery-item"><img src="assets/images/tattoo-37.jpg" alt="Tatuaje Etia Tattoo"></div>
+      <div class="gallery-item"><img src="assets/images/tattoo-27.jpg" alt="Tatuaje Etia Tattoo"></div>
+      <div class="gallery-item"><img src="assets/images/tattoo-28.jpg" alt="Tatuaje Etia Tattoo"></div>
+      <div class="gallery-item"><img src="assets/images/tattoo-20.jpg" alt="Tatuaje Etia Tattoo"></div>
+      <div class="gallery-item"><img src="assets/images/piercing-24.jpg" alt="Piercing Etia Tattoo"></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title">Opiniones reales de nuestros clientes en Coslada</h2>
+        <p class="section__subtitle">Más de 460 reseñas en Google con valoración media de 4,9</p>
+      </div>
+      <div class="testimonials">
+        <div class="testimonial">
+          <div class="testimonial__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Es el sitio perfecto para hacerte un tattoo, un piercing. A nivel higiene y medidas de seguridad, increíbles. María no puede ser más profesional, tanto en el trato personal como a la hora de trabajar. Te aconsejan en todo, y con ella ya han sido 3 los que me he hecho. No descarto un cuarto. María, gracias por tu luz, por ser como eres y gracias a tu equipo de profesionales. 100% recomendable."</p>
+          <p class="testimonial__author">Carmen Díez R.</p>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Un estudio increíble! Con grandes profesionales. Todos son majísimos, te hacen sentir super a gusto. Yo me tatué con María y es una artista. Siempre los recomendaré xq el trato es excepcional. Muchas gracias por todo!"</p>
+          <p class="testimonial__author">María</p>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial__text">"Super recomendable, piercings como el de la ceja o el bridge me los hizo Biza y he de decir que se nota el conocimiento y la profesionalidad, buen servicio por parte de la recepción y piezas de calidad que no suelen ver normalmente en otros locales. Sin duda un lugar de confianza."</p>
+          <p class="testimonial__author">Juan Fernández</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <h2 class="cta__title">¿Listo para tu Transformación?</h2>
+      <p class="cta__text">Envíanos un mensaje para resolver tus dudas, consultar disponibilidad o comenzar a planificar tu diseño. Estamos listos para ayudarte a dar el primer paso.</p>
+      <a href="tel:+34604917570" class="btn btn--primary btn--large">¡Pide tu cita hoy!</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <h4 class="footer__heading">Contacta con nosotros</h4>
+          <ul class="footer__list">
+            <li><a href="mailto:etiatattoo@gmail.com">etiatattoo@gmail.com</a></li>
+            <li><a href="tel:+34604917570">+34 604 917 570</a></li>
+            <li><span>Plaza Del Mar Caribe 3, 28821 Coslada, Madrid</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Enlaces legales</h4>
+          <ul class="footer__list">
+            <li><a href="aviso-legal.html">Aviso legal</a></li>
+            <li><a href="politica-de-privacidad.html">Política de privacidad</a></li>
+            <li><a href="politica-de-cookies.html">Política de cookies</a></li>
+            <li><a href="declaracion-de-accesibilidad.html">Declaración de accesibilidad</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Síguenos</h4>
+          <div class="footer__social">
+            <a href="https://instagram.com/etia.tattoo" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 01-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 017.8 2zm-.2 2A3.6 3.6 0 004 7.6v8.8A3.6 3.6 0 007.6 20h8.8a3.6 3.6 0 003.6-3.6V7.6A3.6 3.6 0 0016.4 4H7.6zm9.65 1.5a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2a3 3 0 100 6 3 3 0 000-6z"/></svg>
+            </a>
+            <a href="https://wa.me/34604917570" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 ETIA TATTOO. Todos los derechos reservados.</p>
+        <div class="footer__logo">
+          <img src="assets/images/logo.jpg" alt="Etia Tattoo">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
