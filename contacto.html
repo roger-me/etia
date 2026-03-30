@@ -70,7 +70,11 @@
         <div>
           <h2 style="font-size:clamp(28px,4vw,40px); text-transform:uppercase; margin-bottom:8px;">Envíanos un mensaje</h2>
           <p style="font-size:15px; font-weight:300; margin-bottom:32px; opacity:0.8;">Rellena el formulario y nos pondremos en contacto contigo lo antes posible.</p>
-          <form action="gracias.html" method="get">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="4cedfc20-67be-4567-be4a-eac76c05f146">
+            <input type="hidden" name="subject" value="Nuevo mensaje desde ETIA TATTOO web">
+            <input type="hidden" name="redirect" value="https://etiatattoo.com/gracias">
+            <input type="checkbox" name="botcheck" style="display:none">
             <div class="form-group">
               <label for="nombre">Nombre *</label>
               <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
