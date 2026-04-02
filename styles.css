@@ -1147,10 +1147,22 @@ h1, h2, h3, h4 {
 }
 
 /* Blog Article */
+.blog-article__back {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--brown);
+  margin-bottom: 24px;
+}
+
+.blog-article__back:hover {
+  color: var(--gold);
+}
+
 .blog-article {
-  max-width: 800px;
+  max-width: var(--max-width);
   margin: 0 auto;
-  padding: 80px 24px;
+  padding: 0 24px;
 }
 
 .blog-article__meta {
